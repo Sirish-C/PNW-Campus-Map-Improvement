@@ -68,14 +68,14 @@ body {
   
   .cluster-icon {
     background-color: #333;
-    height: 2em;
-    width: 2em;
+    height: 1em;
+    width: 1em;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     box-shadow: 0 0 0px 5px #fff;
   }
  /*left Panel */
