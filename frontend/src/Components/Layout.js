@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './Layout.css';
 import Mapcomponent from './Mapcomponent'; // Import the MapComponent
+import { ReactSearchAutocomplete } from 'react-search-autocomplete'
 
 const Layout = () => {
   const [searchText, setSearchText] = useState('');
   const [selectedOption, setSelectedOption] = useState('none');
   const [markers, setMarkers] = useState([]);
+  const [searchSelection , setSearchSelection] = useState('');
   // markers
 
 const buildingMarkers =[
@@ -240,6 +242,101 @@ useEffect(() => {
   }
 }, [selectedOption]);
 
+const items = [
+  {
+    id: 0,
+    name: 'Anderson Building',
+    value:'Anderson Building'
+  },
+  {
+    id: 1,
+    name: 'Classroom Office Building',
+    value:'Classroom Office Building'
+  },
+  {
+    id: 2,
+    name: 'Potter Hall',
+    value:'Potter Hall'
+  },
+  {
+    id: 3,
+    name: 'Potter Building',
+    value:'Potter Building'
+  },
+  {
+    id: 4,
+    name: 'Gyte Building',
+    value:'Gyte Building'
+  },
+  {
+    id: 5,
+    name: 'Schneider Building',
+    value:'Schneider Building'
+  },
+  {
+    id: 6,
+    name: 'Fitness & Recreation Center',
+    value:'Fitness & Recreation Center'
+  },
+  {
+    id: 7,
+    name: 'Nils Building',
+    value:'Nils Building'
+  },
+  {
+    id: 8,
+    name: 'Lawshe Hall',
+    value:'Lawshe Hall'
+  },
+  {
+    id: 9,
+    name: 'Housing',
+    value:'Housing'
+  },
+  {
+    id: 10,
+    name: 'Student Library',
+    value:'Student Library'
+  },
+]
+
+const handleOnSearch = (string, results) => {
+  // onSearch will have as the first callback parameter
+  // the string searched and for the second the results.
+  console.log(string, results)
+}
+
+const handleOnHover = (result) => {
+  // the item hovered
+  console.log(result)
+}
+
+const handleOnSelect = (item) => {
+  // the item selected
+  console.log(item.value)
+  const selected_building = buildingMarkers.find((building)=> building.popUp===item.value);
+  setSearchSelection(selected_building);
+  console.log(selected_building);
+  
+
+}
+
+const handleOnFocus = () => {
+  console.log('Focused')
+}
+
+const formatResult = (item) => {
+  return (
+    <>
+      <span style={{ display: 'block', textAlign: 'left' }}>{item.value}</span>
+    </>
+  )
+}
+useEffect(() => {
+  console.log("Re-rendered.")
+  setMarkers([searchSelection]);
+}, [searchSelection]);
+
     return (
       <div className="page">
         <div className="header">
@@ -260,7 +357,17 @@ useEffect(() => {
         
         </div>
         <div className="search-container">
-          
+        <div style={{ width: 400 }}>
+          <ReactSearchAutocomplete
+            items={items}
+            onSearch={handleOnSearch}
+            onHover={handleOnHover}
+            onSelect={handleOnSelect}
+            onFocus={handleOnFocus}
+            autoFocus
+            formatResult={formatResult}
+          />
+        </div>
           <select
             value={selectedOption}
             onChange={(e) => setSelectedOption(e.target.value)}
