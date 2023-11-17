@@ -342,8 +342,17 @@ useEffect(() => {
         <div className="header">
           <div className="header-content">
             <h1 style={{ textAlign: 'center' }}>PNW CAMPUS MAP</h1>
-
-
+            <div className="search">
+                <ReactSearchAutocomplete
+                items={items}
+                onSearch={handleOnSearch}
+                onHover={handleOnHover}
+                onSelect={handleOnSelect}
+                onFocus={handleOnFocus}
+                autoFocus
+                formatResult={formatResult}
+              />
+              </div>                        
             <div className="logo">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1RpFBtXoPgJzXHVYV04tMwJCithXcgqNHrA&usqp=CAU" alt="Logo" />
             </div>
@@ -356,18 +365,7 @@ useEffect(() => {
             <img src="https://www.pnw.edu/wp-content/uploads/2023/09/PNW-Bell-Tower-077_576x384.jpg" alt="Top Image" />
         
         </div>
-        <div className="search-container">
-        <div style={{ width: 400 }}>
-          <ReactSearchAutocomplete
-            items={items}
-            onSearch={handleOnSearch}
-            onHover={handleOnHover}
-            onSelect={handleOnSelect}
-            onFocus={handleOnFocus}
-            autoFocus
-            formatResult={formatResult}
-          />
-        </div>
+        <div className="search-container">        
           <select
             value={selectedOption}
             onChange={(e) => setSelectedOption(e.target.value)}

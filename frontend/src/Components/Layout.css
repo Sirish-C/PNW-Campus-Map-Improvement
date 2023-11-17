@@ -16,6 +16,7 @@ body {
     align-items: center; /* Center align the text */
     padding : 3px;
     box-sizing: border-box;
+    z-index: 20;
 }
 
 .header-content {
@@ -36,6 +37,9 @@ body {
     min-height: 96%; /* Use all available space to extend to the end of the page */
     display: flex;
 }
+.search{  
+  width: 400px;
+}
 
 /* Style the left panel (30%) */
 .left-panel {
@@ -54,6 +58,7 @@ body {
     background-color: #D3D3D3; /* Change the background color as needed */
     padding: 20;
     box-sizing: border-box;
+    z-index: -10 !important;
 }
 .map-container {
   width: 100%; /* Set the width to 100% to fill the available space */
