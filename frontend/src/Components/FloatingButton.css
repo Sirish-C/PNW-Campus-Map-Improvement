@@ -1,0 +1,8 @@
+.floatingButtons{
+    padding: 1px 5px;
+    width: fit-content;
+    /* height:fit-content; */
+    font-size: 13px;
+    border-radius: 10px;
+    background-color: azure;
+}
