@@ -9,8 +9,8 @@ import { Icon, divIcon, point } from "leaflet";
 
 // Create custom icons for buildings, parking, and dining
 const buildingIcon = new Icon({
-  iconUrl: "https://cdn-icons-png.flaticon.com/128/684/684908.png",
-  iconSize: [38, 38],
+  iconUrl: "https://cdn-icons-png.flaticon.com/128/4707/4707124.png",
+  iconSize: [32, 32],
 });
 
 const parkingIcon = new Icon({
@@ -27,15 +27,25 @@ const diningIcon = new Icon({
   iconSize: [35, 35],
 });
 
+const entryIcon = new Icon({
+  iconUrl: "https://cdn-icons-png.flaticon.com/128/10754/10754780.png",
+  iconSize: [35, 35],
+});
+const servicesIcon = new Icon({
+  iconUrl: "https://cdn-icons-png.flaticon.com/128/870/870175.png",
+  iconSize: [35, 35],
+});
+
+
 
 // custom cluster icon
-const createClusterCustomIcon = function (cluster) {
+{/*const createClusterCustomIcon = function (cluster) {
   return new divIcon({
     html: `<span class="cluster-icon">${cluster.getChildCount()}</span>`,
     className: "custom-marker-cluster",
     iconSize: point(33, 33, true)
   });
-}; 
+}; */}
 
 function getMarkerIcon(category) {
   switch (category) {
@@ -47,6 +57,10 @@ function getMarkerIcon(category) {
       return diningIcon;
       case 'emergency':
       return emergencyIcon;
+      case 'Entry':
+      return entryIcon;
+      case 'services':
+          return servicesIcon;
     //default:
      // return customIcon; // Use the default icon for other categories or if not specified
   }
@@ -59,7 +73,7 @@ export default function App({ markers, searchText, selectedOption }) {
   });
   
   
-  const center = [41.5810, -87.4728];
+  const center = [41.58389937037336, -87.47355647640109];
   // Coordinates for the polygon to highlight an area
   //Campus
   const polygonCoords = [
@@ -92,7 +106,7 @@ export default function App({ markers, searchText, selectedOption }) {
     ]
 
   return (
-    <MapContainer center={center} zoom={15} className="map-container" >
+    <MapContainer center={center} zoom={16} className="map-container" >
       {/* OPEN STREEN MAPS TILES */}
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -113,7 +127,7 @@ export default function App({ markers, searchText, selectedOption }) {
 
 <MarkerClusterGroup
   chunkedLoading
-  iconCreateFunction={createClusterCustomIcon}
+ // iconCreateFunction={createClusterCustomIcon}
 >
   {filteredMarkers.map((marker) => (
     <Marker position={marker.geocode} icon={getMarkerIcon(marker.category)}>
