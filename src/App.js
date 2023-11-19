@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Clo from './Components/DetailsPages/Clo';
+import Anderson from './Components/DetailsPages/Anderson';
+import Layout from './Components/Layout';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const App = () => (
+    <Router>
+      <Switch>
+        <Route path="/Clo">
+          <div style={{ display: 'flex' }}>
+            <div style={{ flex: '0 0 35%' }}>
+              <Clo />
+            </div>
+          </div>
+        </Route>
+        <Route path="/Anderson">
+          <div style={{ display: 'flex' }}>
+            <div style={{ flex: '0 0 35%' }}>
+              <Anderson />
+            </div>
+          </div>
+        </Route>
+        <Route exact path="/">
+          <Layout />
+        </Route>
+        
+      </Switch>
+    </Router>
   );
-}
-
-export default App;
+  
+  export default App;
