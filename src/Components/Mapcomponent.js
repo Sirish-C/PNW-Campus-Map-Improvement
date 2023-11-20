@@ -1,4 +1,5 @@
 import './Layout.css';
+import LeftPanel from './Leftpanel.js';
 import React, { useState, useEffect } from 'react';
 import L from 'leaflet';
 import "leaflet/dist/leaflet.css";
@@ -6,50 +7,10 @@ import { useHistory } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup,Polygon, Tooltip } from "react-leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
 import { polygonCoords, polygoncoords1,polygoncoords2 } from './Highlight';
-import { navigateToCloPage,navigateToAndersonPage  } from './DetailsPages/Navigations.js';
+import { navigateToCloPage,navigateToAndersonPage, navigateToLibraryPage, navigateToLawshePage  } from './DetailsPages/Navigations.js';
+import { buildingIcon,diningIcon,parkingIcon,emergencyIcon,entryIcon,servicesIcon } from './Markers.js';
 import Clo from './DetailsPages/Clo';
 import Anderson from './DetailsPages/Anderson';
-
-
-import { Icon, divIcon, point } from "leaflet";
-
-
-// Create custom icons for buildings, parking, and dining
-const buildingIcon = new Icon({
-  iconUrl: "https://cdn-icons-png.flaticon.com/128/4707/4707124.png",
-  iconSize: [32, 32],
-});
-
-
-const parkingIcon = new Icon({
-  iconUrl: "https://cdn-icons-png.flaticon.com/128/529/529860.png",
-  iconSize: [38, 38],
-});
-const emergencyIcon = new Icon({
-  iconUrl: "https://cdn-icons-png.flaticon.com/128/2014/2014952.png",
-  iconSize: [35, 35],
-});
-
-
-const diningIcon = new Icon({
-  iconUrl: "https://cdn-icons-png.flaticon.com/128/857/857718.png",
-  iconSize: [35, 35],
-});
-
-
-const entryIcon = new Icon({
-  iconUrl: "https://cdn-icons-png.flaticon.com/128/10754/10754780.png",
-  iconSize: [35, 35],
-});
-const servicesIcon = new Icon({
-  iconUrl: "https://cdn-icons-png.flaticon.com/128/870/870175.png",
-  iconSize: [35, 35],
-});
-
-
-
-
-
 
 function getMarkerIcon(category) {
   switch (category) {
@@ -70,31 +31,40 @@ function getMarkerIcon(category) {
   }
 }
 
-
 export default function App({ markers, searchText, selectedOption , setLeftContainerContent, setSelectedMarkerInfo}) {
+  const [selectedMarker, setSelectedMarker] = useState(null);
   const history = useHistory();
-  
   const filteredMarkers = markers.filter((marker) => {
     // Check if the marker's category matches the selectedOption
     return marker.category === selectedOption;
 });
-const handleMarkerClick = (marker) => {
-  if (marker.popUp === 'Cafeteria') {
+console.log('Filtered Markers:', filteredMarkers);
+const handleMarkerClick = (marker) => { 
+  
+  if (marker.popUp === "Classroom Office Building") {
     navigateToCloPage(history);
-  } else if (marker.popUp === "Leo's Market Place") {
+  } else if (marker.popUp =="Anderson Building") {
     navigateToAndersonPage(history);
   }
+  else if (marker.popUp =="Student Library") {
+    navigateToLibraryPage(history);
+  }
+  else if (marker.popUp =="Lawshe Hall") {
+    navigateToLawshePage(history);
+  }
+  console.log('Marker clicked:', marker);
   // Add additional conditions for other popUp names if needed
 
-  // Set information about the selected marker
-  //setSelectedMarkerInfo(marker);
 };
 
  
  
   const center = [41.58389937037336, -87.47355647640109];
  
-
+  useEffect(() => {
+    console.log('Filtered Markers:', filteredMarkers);
+    console.log('Selected Option:', selectedOption);
+  }, [filteredMarkers, selectedOption]);
 
   useEffect(() => {
     // Set the history object for navigation
@@ -135,7 +105,7 @@ const handleMarkerClick = (marker) => {
     position={marker.geocode}
     icon={getMarkerIcon(marker.category)}
     eventHandlers={{
-      click: () => handleMarkerClick(marker),
+    click: () => handleMarkerClick(marker),
     }}
   >
     <Tooltip>{marker.popUp}</Tooltip>

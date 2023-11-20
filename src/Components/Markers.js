@@ -1,3 +1,37 @@
+import { Icon, divIcon, point } from "leaflet";
+ 
+ // Create custom icons for buildings, parking, and dining
+export const buildingIcon = new Icon({
+  iconUrl: "https://cdn-icons-png.flaticon.com/128/4707/4707124.png",
+  iconSize: [32, 32],
+});
+
+
+export const parkingIcon = new Icon({
+  iconUrl: "https://cdn-icons-png.flaticon.com/128/529/529860.png",
+  iconSize: [38, 38],
+});
+export const emergencyIcon = new Icon({
+  iconUrl: "https://cdn-icons-png.flaticon.com/128/2014/2014952.png",
+  iconSize: [35, 35],
+});
+
+
+export const diningIcon = new Icon({
+  iconUrl: "https://cdn-icons-png.flaticon.com/128/857/857718.png",
+  iconSize: [35, 35],
+});
+
+
+export const entryIcon = new Icon({
+  iconUrl: "https://cdn-icons-png.flaticon.com/128/10754/10754780.png",
+  iconSize: [35, 35],
+});
+export const servicesIcon = new Icon({
+  iconUrl: "https://cdn-icons-png.flaticon.com/128/870/870175.png",
+  iconSize: [35, 35],
+});
+ 
  // markers
 
  export const buildingMarkers =[
