@@ -233,71 +233,71 @@ export default function App({ markers, searchText, selectedOption }) {
       />
     <Polygon
         positions={parking1Coords}
-        pathOptions={{ color: '#808080', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
     <Polygon
         positions={parking2Coords}
-        pathOptions={{ color: '#808080', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
     <Polygon
         positions={parking3Coords}
-        pathOptions={{ color: '#808080', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
     <Polygon
         positions={parking4Coords}
-        pathOptions={{ color: '#808080', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
     <Polygon
         positions={parking5Coords}
-        pathOptions={{ color: '#808080', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
     <Polygon
         positions={parking6Coords}
-        pathOptions={{ color: '#808080', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
     <Polygon
         positions={parking7Coords}
-        pathOptions={{ color: '#808080', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
     <Polygon
         positions={parking8Coords}
-        pathOptions={{ color: '#808080', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
     <Polygon
         positions={parking9Coords}
-        pathOptions={{ color: '#808080', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
     <Polygon
         positions={parking10Coords}
-        pathOptions={{ color: '#808080', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
     <Polygon
         positions={parking11Coords}
-        pathOptions={{ color: '#808080', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
     <Polygon
         positions={parking12Coords}
-        pathOptions={{ color: '#808080', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
     <Polygon
         positions={parking13Coords}
-        pathOptions={{ color: '#808080', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
     <Polygon
         positions={parking14Coords}
-        pathOptions={{ color: '#808080', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
     <Polygon
         positions={parking15Coords}
-        pathOptions={{ color: '#808080', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
     <Polygon
         positions={parking16Coords}
-        pathOptions={{ color: '#808080', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        pathOptions={{ color:'#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
     <Polygon
         positions={parking17Coords}
-        pathOptions={{ color: '#808080', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        pathOptions={{ color:'#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
 
 <MarkerClusterGroup
