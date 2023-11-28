@@ -59,7 +59,7 @@ z-index: 11 !important;
   background-color: #D3D3D3; /* Change the background color as needed */
   padding: 20;
   box-sizing: border-box;
-  z-index: 10 !important;
+  z-index: 10 !important; 
 }
 .map-container {
 width: 100%; /* Set the width to 100% to fill the available space */
@@ -124,4 +124,11 @@ padding: 30px;
 font-size: 20px;
 border: 1px solid #ccc;
 border-radius: 10px;
+}
+.inter-tiles{
+  position: absolute;
+}
+#map{
+  width: fit-content;
+  height: fit-content;
 }

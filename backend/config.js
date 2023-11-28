@@ -5,7 +5,7 @@ const config = {
       port: 3306,
       user: "admin",
       password: "Nggyu1(((",
-      database: "PNW_map",
+      database: "pnwcampusmap",
       connectTimeout: 60000
     },
     listPerPage: 10,

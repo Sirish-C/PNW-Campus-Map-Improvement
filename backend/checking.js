@@ -1,5 +1,4 @@
 var mysql = require('mysql');
-
 console.log("Testing")
 var con = mysql.createConnection({
   host: "104.194.77.119",
