@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Potter  = () => (
-  <div style={{ padding: '20px', backgroundColor: '#e6f7ff', minHeight: '100vh' }}>
+  <div>
     <h2>Potter Building</h2>
 
 <h2>First Floor</h2>
