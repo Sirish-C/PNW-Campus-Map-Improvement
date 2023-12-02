@@ -27,6 +27,16 @@ const diningIcon = new Icon({
   iconSize: [35, 35],
 });
 
+const entryIcon = new Icon({
+  iconUrl: "https://cdn-icons-png.flaticon.com/128/10754/10754780.png",
+  iconSize: [35, 35],
+});
+const servicesIcon = new Icon({
+  iconUrl: "https://cdn-icons-png.flaticon.com/128/870/870175.png",
+  iconSize: [35, 35],
+});
+
+
 
 // custom cluster icon
 {/*const createClusterCustomIcon = function (cluster) {
@@ -47,6 +57,10 @@ function getMarkerIcon(category) {
       return diningIcon;
       case 'emergency':
       return emergencyIcon;
+      case 'Entry':
+      return entryIcon;
+      case 'services':
+          return servicesIcon;
     //default:
      // return customIcon; // Use the default icon for other categories or if not specified
   }
