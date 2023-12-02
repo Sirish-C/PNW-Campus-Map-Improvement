@@ -77,6 +77,28 @@ height: 100%; /* Set the height to 100% to fill the available space */
   height: 1em;
   width: 1em;
   color: #fff;
+    height: 90vh;
+    width: 100%;
+    border-radius: 2rem;
+  }
+  
+  .cluster-icon {
+    background-color: #333;
+    height: 1em;
+    width: 1em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    box-shadow: 0 0 0px 5px #fff;
+  }
+ /*left Panel */
+  
+ .left-panel {
+  width: 35%;
+  background-color: #eee;
   display: flex;
   align-items: center;
   justify-content: center;

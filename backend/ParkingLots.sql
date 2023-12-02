@@ -1,0 +1,13 @@
+SELECT * FROM pnwcampusmap.ParkingLots;
+insert into ParkingLots(pl_id,pl_name,pl_latitude,pl_longitude,building_id)values('1','CLO ParkingLot','41.58676','-87.47416','2');
+insert into ParkingLots(pl_id,pl_name,pl_latitude,pl_longitude,building_id)values('2','University Services ParkingLot 1','41.58763019191676','87.47177380305824','14');
+insert into ParkingLots(pl_id,pl_name,pl_latitude,pl_longitude,building_id)values('3','University Services ParkingLot 2','41.58686877622326','-87.4719282303319','14');
+insert into ParkingLots(pl_id,pl_name,pl_latitude,pl_longitude,building_id)values('4','University Services ParkingLot 3','41.586201313366566','-87.47295420240837','14');
+insert into ParkingLots(pl_id,pl_name,pl_latitude,pl_longitude,building_id)values('5','Near to Wicker Avenue','41.58618743098299','-87.47170137697195','14');
+insert into ParkingLots(pl_id,pl_name,pl_latitude,pl_longitude,building_id)values('6','169th Street Parking Garage','41.585194832806856','-87.47200762318722','14');
+insert into ParkingLots(pl_id,pl_name,pl_latitude,pl_longitude,building_id)values('7','Near to Donald S.Powers Computer','41.585835389098804','-87.47579977145372','11');
+insert into ParkingLots(pl_id,pl_name,pl_latitude,pl_longitude,building_id)values('8','Near to Woodmar Avenue:ParkingLot 1','41.582393963255136','-87.47580351222474','7');
+insert into ParkingLots(pl_id,pl_name,pl_latitude,pl_longitude,building_id)values('9','173 st Parking ','41.58259190732055','-87.47433270207964','4');
+insert into ParkingLots(pl_id,pl_name,pl_latitude,pl_longitude,building_id)values('10','ParkingLot 13 ','41.57991368161599','-87.47293409720919','4');
+insert into ParkingLots(pl_id,pl_name,pl_latitude,pl_longitude,building_id)values('11','ParkingLot 12 ','41.58027574400408','-87.47509209072037','4');
+insert into ParkingLots(pl_id,pl_name,pl_latitude,pl_longitude,building_id)values('12','ParkingLot 14 ','41.579091219606745','-87.47471208241629','4');
