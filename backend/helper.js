@@ -2,14 +2,14 @@ function getOffset(currentPage = 1, listPerPage) {
     return (currentPage - 1) * [listPerPage];
   }
   
-  function emptyOrRows(rows) {
-    if (!rows) {
+  function isEmpty(data) {
+    if (!data) {
       return [];
     }
-    return rows;
+    return data;
   }
   
   module.exports = {
     getOffset,
-    emptyOrRows
+    isEmpty
   }
