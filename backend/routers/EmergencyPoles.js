@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const buildings = require('../services/buildings');
+const emergencyPoles = require('../services/emergencyPoles');
 
 /* GET programming languages. */
 router.get('/', async function(req, res, next) {
   try {
-    res.json(await buildings.getBuildings(req.query.page));
+    res.json(await emergencyPoles.getEmergencyPoles(req.query.page));
   } catch (err) {
-    console.error(`Error while getting buildings `, err.message);
+    console.error(`Error while getting emergency Poles `, err.message);
     next(err);
   }
 });
