@@ -1,0 +1,15 @@
+SELECT * FROM pnwcampusmap.EmergencyPoles;
+Insert into EmergencyPoles(Ep_id,Ep_name,Ep_latitude,Ep_longitutude,Ep_location,Building_id)values('1','EmergencyPole1','41.587151','-87.473541','Schneider Avenue Building','12');
+Insert into EmergencyPoles(Ep_id,Ep_name,Ep_latitude,Ep_longitutude,Ep_location,Building_id)values('2','EmergencyPole2',"41.585544",'-87.473439','Gene Stratton Porter Hall','9');
+Insert into EmergencyPoles(Ep_id,Ep_name,Ep_latitude,Ep_longitutude,Ep_location,Building_id)values('3','EmergencyPole3','41.586112','-87.471763','University Services','14');
+Insert into EmergencyPoles(Ep_id,Ep_name,Ep_latitude,Ep_longitutude,Ep_location,Building_id)values('4','EmergencyPole4','41.587137','-87.471866','University Services','14');
+Insert into EmergencyPoles(Ep_id,Ep_name,Ep_latitude,Ep_longitutude,Ep_location,Building_id)values('5','EmergencyPole5','41.585591','-87.474367','Milliard E. Gyte Science Bldg','5');
+Insert into EmergencyPoles(Ep_id,Ep_name,Ep_latitude,Ep_longitutude,Ep_location,Building_id)values('6','EmergencyPole6','41.585603','-87.475511','Milliard E. Gyte Science Bldg','5');
+Insert into EmergencyPoles(Ep_id,Ep_name,Ep_latitude,Ep_longitutude,Ep_location,Building_id)values('7','EmergencyPole7','41.584708','-87.475718','Student Union & Library','13');
+Insert into EmergencyPoles(Ep_id,Ep_name,Ep_latitude,Ep_longitutude,Ep_location,Building_id)values('8','EmergencyPole8','41.584909','-87.474280','Milliard E. Gyte Science Bldg','5');
+Insert into EmergencyPoles(Ep_id,Ep_name,Ep_latitude,Ep_longitutude,Ep_location,Building_id)values('9','EmergencyPole9','41.584866','-87.473502','Gene Stratton Porter Hall','9');
+Insert into EmergencyPoles(Ep_id,Ep_name,Ep_latitude,Ep_longitutude,Ep_location,Building_id)values('10','EmergencyPole10','41.584119','-87.474151','Student Union & Library','13');
+Insert into EmergencyPoles(Ep_id,Ep_name,Ep_latitude,Ep_longitutude,Ep_location,Building_id)values('11','EmergencyPole11','41.582560','-87.475667','C H Lawshe Hall','7');
+Insert into EmergencyPoles(Ep_id,Ep_name,Ep_latitude,Ep_longitutude,Ep_location,Building_id)values('12','EmergencyPole12','41.581992','-87.475322','C H Lawshe Hall','7');
+Insert into EmergencyPoles(Ep_id,Ep_name,Ep_latitude,Ep_longitutude,Ep_location,Building_id)values('13','EmergencyPole13','41.582073','-87.474200','Nils K. Nelson Bioscience Innovation Building','8');
+Insert into EmergencyPoles(Ep_id,Ep_name,Ep_latitude,Ep_longitutude,Ep_location,Building_id)values('14','EmergencyPole14','41.580632','-87.473362','Fitness & Recreation Center','4');
