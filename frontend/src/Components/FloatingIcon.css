@@ -1,22 +1,10 @@
 /* FloatingIcon.css */
 
-.floating-icon {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: #007bff;
-    color: white;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: background-color 0.3s ease; 
-  }
+.custom-tooltip  {
   
-  .floating-icon:hover {
-    background-color: #020507; 
-  }
-  
+  padding : 8px;
+  border-Radius: 5px;
+  box-Shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  font-weight: bold;
+};

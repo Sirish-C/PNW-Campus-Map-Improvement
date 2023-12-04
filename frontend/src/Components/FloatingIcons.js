@@ -1,39 +1,78 @@
-import React from 'react';
-import { Marker, Popup, Tooltip } from 'react-leaflet';
+
+import React, { useState, useEffect } from 'react';
+import { Marker, Popup, Tooltip,} from 'react-leaflet';
 import L from 'leaflet';
+import './FloatingIcon.css' ;
+import Anderson from './DetailsPages/Anderson';
+import Clo from './DetailsPages/Clo'; 
+import Library from './DetailsPages/Library';
+import Lawshe from './DetailsPages/Lawshe';
+import Powers from './DetailsPages/Powers.js';
+import 'leaflet/dist/leaflet.css';
+
+
 export const iconsData = [
+  
   {
-    position: [41.584426071372256, -87.46832730438692],
+    position: [41.58415864296166, -87.48097576433399],
     iconUrl: "https://cdn-icons-png.flaticon.com/128/4707/4707124.png",
-    category: 'Buildings',
+    category: 'Anderson Building',
+    popUp : <Anderson />,
     
   },
   {
-    position: [41.58324712934985, -87.46832730438692],
-    iconUrl: "https://cdn-icons-png.flaticon.com/128/529/529860.png",
-    category: 'Parking',
+    position: [41.583171329004365, -87.48097576433399],
+    iconUrl: "https://cdn-icons-png.flaticon.com/128/2015/2015741.png",
+    category: 'CLO Building',
+    popUp: <Clo />,
     
   },
   {
-    position: [41.582339193810405, -87.46829107090153],
-    iconUrl: "https://cdn-icons-png.flaticon.com/128/857/857718.png",
-    category: 'Dining',
+    position: [41.582001159580365, -87.48095946852129],
+    iconUrl: "https://cdn-icons-png.flaticon.com/128/3854/3854232.png",
+    category: 'Powers Building',
+    popUp : <Powers />,
+    
+  },
+  {
+    position: [41.58410988707451, -87.46894945466867],
+    iconUrl: "https://cdn-icons-png.flaticon.com/128/8074/8074804.png",
+    category: 'Gyte Building',
+    popUp : <Anderson />,
+    
+  },
+  {
+    position: [41.58308081935945, -87.46896994682143],
+    iconUrl: "https://cdn-icons-png.flaticon.com/128/8074/8074804.png",
+    category: 'Student Union & Library',
+    popUp : <Library />,
+    
+  },
+  {
+    position: [41.58203772769918, -87.468933158856],
+    iconUrl: "https://cdn-icons-png.flaticon.com/128/12218/12218382.png",
+    category: 'Lawshe Hall',
+    popUp : <Lawshe />,
     
   },
 
 ];
-
 const FloatingIcons = ({ iconsData, onClick }) => {
-  return (
-    <>
-      {iconsData.map((iconData) => (
-        <FloatingIcon key={iconData.category} {...iconData} onClick={onClick} />
-      ))}
-    </>
-  );
-};
 
-const FloatingIcon = ({ position, iconUrl, category, onClick }) => {
+  
+  
+    return (
+      <>
+        {iconsData.map((iconData) => (
+          <FloatingIcon key={iconData.category} {...iconData} onClick={onClick} />
+        ))}
+      </>
+    );
+  };
+ 
+  
+
+const FloatingIcon= ({ position, iconUrl, category, onClick, popUp}) => {
   const icon = new L.Icon({
     
     iconUrl: iconUrl,
@@ -41,15 +80,25 @@ const FloatingIcon = ({ position, iconUrl, category, onClick }) => {
    iconAnchor: [16, 32],
     popupAnchor: [0, -32],
   });
+  
+ 
 
   return (
-    <Marker position={position} icon={icon} onClick={() => onClick(category)}>
+   
+    <Marker position={position} icon={icon}  >
       {/* You can customize the Popup content as needed */}
-      <Tooltip>{category}</Tooltip>
-      <Popup />
+     < div className="custom-tooltip" >
+      <Tooltip direction="right" offset={[15, -13]} opacity={2} permanent= {true}
+       >
+      <span style={{ fontSize: '14px', fontWeight: 'bold', color: '#AB7D00' }}>{category}</span>
+
+            
+          </Tooltip> 
+       <Popup>{popUp}</Popup>
       
+      </div>
     </Marker>
-  );
+    );
 };
 
 export default FloatingIcons;

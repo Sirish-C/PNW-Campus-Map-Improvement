@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@react-leaflet/core": "^2.1.0",
+    "react-leaflet-markercluster": "^3.0.0-rc1"
+  }
+}

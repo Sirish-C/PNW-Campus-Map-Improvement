@@ -34,10 +34,6 @@ const center = [41.58389937037336, -87.47355647640109];
 const handleMarkerClick = (marker) => { 
   console.log("marker")
 }
-const handleIconClick = (category) => {
-  // Add your logic for handling icon clicks here
-  console.log(`Icon clicked for category: ${category}`);
-}
 
 
 
@@ -49,8 +45,6 @@ export default function App({ markers, searchText, selectedOption , setLeftConta
     // Check if the marker's category matches the selectedOption
     return marker.category === selectedOption;
 });
-console.log('Filtered Markers:', filteredMarkers);
-
  
   useEffect(() => {
     console.log('Filtered Markers:', filteredMarkers);
@@ -75,7 +69,7 @@ console.log('Filtered Markers:', filteredMarkers);
           />
         </BaseLayer>
       </LayersControl>
-      <FloatingIcons iconsData = {iconsData} onClick={handleIconClick} />
+      <FloatingIcons iconsData = {iconsData} />
  
     <Polygon
         positions={polygonCoords}
