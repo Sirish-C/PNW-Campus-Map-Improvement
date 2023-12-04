@@ -12,10 +12,10 @@ export default function App({ markers, searchText, selectedOption }) {
     return marker.category === selectedOption;
   });
   
-  
   const center = [41.58389937037336, -87.47355647640109];
   // Coordinates for the polygon to highlight an area
-  const parking1Coords = [
+  const parkingPolygons = [
+   const parking1Coords = [
     [41.5876319, -87.4746019],
     [41.5869458, -87.474575],
     [41.5866328, -87.4746126],
@@ -29,7 +29,7 @@ export default function App({ markers, searchText, selectedOption }) {
     [41.5876319, -87.4746019]
     ]
     
-  const parking2Coords = [
+   const parking2Coords = [
     [41.5865432, -87.4735861],
     [41.5863907, -87.4736237],
     [41.5856725, -87.4736237],
@@ -46,14 +46,14 @@ export default function App({ markers, searchText, selectedOption }) {
     [41.5865432, -87.4735861]
     ]
   
-  const parking3Coords= [
+   const parking3Coords= [
     [41.587141, -87.4722504],
     [41.5866114, -87.4722397],
     [41.5866034, -87.4715369],
     [41.587145, -87.4715262],
     [41.587141, -87.4722504]
     ]
-  const parking4Coords = [
+   const parking4Coords = [
     [41.5864053, -87.4720108],
     [41.5857713, -87.4720215],
     [41.5857733, -87.4715468],
@@ -62,21 +62,21 @@ export default function App({ markers, searchText, selectedOption }) {
     [41.5864474, -87.4718418],
     [41.5864053, -87.4720108]
     ]
-  const parking5Coords = [
+   const parking5Coords = [
     [41.5876697, -87.4719172],
     [41.5873768, -87.4719225],
     [41.5873728, -87.4715846],
     [41.5876616, -87.4715846],
     [41.5876697, -87.4719172]
     ]
-  const parking6Coords = [
+   const parking6Coords = [
     [41.5831908, -87.4748667],
     [41.5820472, -87.4748667],
     [41.5820672, -87.473252],
     [41.5832028, -87.4732735],
     [41.5831908, -87.4748667]
     ]
-  const parking7Coords = [
+   const parking7Coords = [
     [41.5825466, -87.4758843],
     [41.5813629, -87.4759219],
     [41.5813629, -87.4749509],
@@ -85,14 +85,14 @@ export default function App({ markers, searchText, selectedOption }) {
     [41.5825426, -87.4756483],
     [41.5825466, -87.4758843] 
     ]
-  const parking8Coords = [
+   const parking8Coords = [
     [41.5819286, -87.4748276],
     [41.5813749, -87.4748329],
     [41.5813869, -87.4734811],
     [41.5819246, -87.4734811],
     [41.5819286, -87.4748276]
     ]
-  const parking9Coords = [
+   const parking9Coords = [
     [41.580823, -87.4754039],
     [41.5805542, -87.4754414],
     [41.5798921, -87.4754414],
@@ -107,7 +107,7 @@ export default function App({ markers, searchText, selectedOption }) {
     [41.580819, -87.4745241],
     [41.580823, -87.4754039] 
     ]
-  const parking10Coords = [
+   const parking10Coords = [
      [41.5799434, -87.473212],
      [41.579884, -87.4732292],
      [41.5798407, -87.47333],
@@ -146,7 +146,7 @@ export default function App({ markers, searchText, selectedOption }) {
      [41.5802548, -87.4732141],
      [41.5799434, -87.473212]
     ]
-  const parking11Coords = [
+   const parking11Coords = [
     [41.5781382, -87.4749999],
     [41.5783663, -87.4749763],
     [41.5785461, -87.4751565],
@@ -171,14 +171,14 @@ export default function App({ markers, searchText, selectedOption }) {
     [41.5780804, -87.4751501],
     [41.5781382, -87.4749999]
     ]
-  const parking12Coords = [
+   const parking12Coords = [
     [41.5832398, -87.4758932],
     [41.5832302, -87.4756014],
     [41.583686, -87.4756229],
     [41.5836635, -87.4758932],
     [41.5832398, -87.4758932]
     ]
-  const parking13Coords = [
+   const parking13Coords = [
     [41.5855548, -87.4759649],
     [41.5855548, -87.4755487],
     [41.5858838, -87.4755186],
@@ -186,7 +186,7 @@ export default function App({ markers, searchText, selectedOption }) {
     [41.5859464, -87.4759757],
     [41.5855548, -87.4759649]
     ]
-  const parking14Coords = [
+   const parking14Coords = [
     [41.5873681, -87.4750586],
     [41.5873489, -87.474653],
     [41.5881304, -87.474653],
@@ -201,14 +201,14 @@ export default function App({ markers, searchText, selectedOption }) {
     [41.5875864, -87.4750607],
     [41.5873681, -87.4750586]
     ]
-  const parking15Coords = [
+   const parking15Coords = [
     [41.5882374, -87.4693497],
     [41.5878923, -87.4693562],
     [41.5878907, -87.4690687],
     [41.5882326, -87.4690987],
     [41.5882374, -87.4693497]
     ]
-  const parking16Coords = [
+   const parking16Coords = [
     [41.5882067, -87.4707224],
     [41.5878536, -87.470716],
     [41.5878312, -87.4706559],
@@ -217,13 +217,14 @@ export default function App({ markers, searchText, selectedOption }) {
     [41.5882083, -87.4702611],
     [41.5882067, -87.4707224] 
     ]
-  const parking17Coords = [
+   const parking17Coords = [
     [41.5872592, -87.4723356],
     [41.5871469, -87.4723399],
     [41.5871597, -87.4717047],
     [41.5872528, -87.4717219],
     [41.5872592, -87.4723356]
     ]
+  ];
   return (
     <MapContainer center={center} zoom={16} className="map-container" >
       {/* OPEN STREEN MAPS TILES */}
@@ -231,6 +232,7 @@ export default function App({ markers, searchText, selectedOption }) {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
+    {parkingPolygons.map((coords, index) => (
     <Polygon
         positions={parking1Coords}
         pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
@@ -300,16 +302,15 @@ export default function App({ markers, searchText, selectedOption }) {
         pathOptions={{ color:'#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
       />
 
-<MarkerClusterGroup
-  chunkedLoading
- // iconCreateFunction={createClusterCustomIcon}
->
-  {filteredMarkers.map((marker) => (
-    <Marker position={marker.geocode} icon={getMarkerIcon(marker.category)}>
-      <Tooltip>{marker.popUp}</Tooltip>
-    </Marker>
-  ))}
-</MarkerClusterGroup>
-    </MapContainer>
+    ))}
+
+    <MarkerClusterGroup chunkedLoading>
+         {filteredMarkers.map((marker) => (
+            <Marker position={marker.geocode} icon={getMarkerIcon(marker.category)}>
+               <Tooltip>{marker.popUp}</Tooltip>
+            </Marker>
+         ))}
+      </MarkerClusterGroup>
+  </MapContainer>
   );
 }
