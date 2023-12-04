@@ -7,14 +7,27 @@ import MarkerClusterGroup from "react-leaflet-cluster";
 
 
 export default function App({ markers, searchText, selectedOption }) {
-  const filteredMarkers = markers.filter((marker) => {
-    // Check if the marker's category matches the selectedOption
-    return marker.category === selectedOption;
-  });
   
   const center = [41.58389937037336, -87.47355647640109];
-  // Coordinates for the polygon to highlight an area
   const parkingPolygons = [
+      parking1Coords,
+      parking2Coords,
+      parking3Coords,
+      parking4Coords,
+      parking5Coords,
+      parking6Coords,
+      parking7Coords,
+      parking8Coords,
+      parking9Coords,
+      parking10Coords,
+      parking11Coords,
+      parking12Coords,
+      parking13Coords,
+      parking14Coords,
+      parking15Coords,
+      parking16Coords,
+      parking17Coords,
+  ];
    const parking1Coords = [
     [41.5876319, -87.4746019],
     [41.5869458, -87.474575],
@@ -224,7 +237,6 @@ export default function App({ markers, searchText, selectedOption }) {
     [41.5872528, -87.4717219],
     [41.5872592, -87.4723356]
     ]
-  ];
   return (
     <MapContainer center={center} zoom={16} className="map-container" >
       {/* OPEN STREEN MAPS TILES */}
@@ -232,77 +244,13 @@ export default function App({ markers, searchText, selectedOption }) {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-    {parkingPolygons.map((coords, index) => (
-    <Polygon
-        positions={parking1Coords}
-        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
-      />
-    <Polygon
-        positions={parking2Coords}
-        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
-      />
-    <Polygon
-        positions={parking3Coords}
-        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
-      />
-    <Polygon
-        positions={parking4Coords}
-        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
-      />
-    <Polygon
-        positions={parking5Coords}
-        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
-      />
-    <Polygon
-        positions={parking6Coords}
-        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
-      />
-    <Polygon
-        positions={parking7Coords}
-        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
-      />
-    <Polygon
-        positions={parking8Coords}
-        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
-      />
-    <Polygon
-        positions={parking9Coords}
-        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
-      />
-    <Polygon
-        positions={parking10Coords}
-        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
-      />
-    <Polygon
-        positions={parking11Coords}
-        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
-      />
-    <Polygon
-        positions={parking12Coords}
-        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
-      />
-    <Polygon
-        positions={parking13Coords}
-        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
-      />
-    <Polygon
-        positions={parking14Coords}
-        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
-      />
-    <Polygon
-        positions={parking15Coords}
-        pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
-      />
-    <Polygon
-        positions={parking16Coords}
-        pathOptions={{ color:'#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
-      />
-    <Polygon
-        positions={parking17Coords}
-        pathOptions={{ color:'#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
-      />
-
-    ))}
+     {parkingPolygons.map((coords, index) => (
+        <Polygon
+          key={index}
+          positions={coords}
+          pathOptions={{ color: '#46AAF5', fillColor: '#1B6A9E', fillOpacity: 0.2 }}
+        />
+      ))}
 
     <MarkerClusterGroup chunkedLoading>
          {filteredMarkers.map((marker) => (
