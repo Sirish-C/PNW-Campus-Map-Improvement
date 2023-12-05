@@ -1,4 +1,4 @@
-# Search Bar State Diagram
+# Campus Map State Diagram for Search Bar
 
 ## Overview
 
