@@ -5,7 +5,7 @@
 This project includes a search bar component with a state diagram to help users seamlessly search for items within the application. This README provides an overview of the states and transitions associated with the search bar functionality.
 
 ## Search Bar State Diagram
-
+<img width="1227" alt="StateDiagram" src="https://github.com/Sirish-C/PNW-Campus-Map-Improvement/assets/118717710/78ac2d81-930d-4cf7-ab69-388b9c8b0898">
 ### States and Transitions
 
 1. **Start State:**
