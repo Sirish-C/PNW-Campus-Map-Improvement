@@ -1,0 +1,146 @@
+/* Reset default margin and padding for the entire page */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Make the body a flex container with a column layout */
+}
+
+/* Create the header (8%) */
+.header {
+  flex: 0 0 0%;
+  background-color:#AB7D00; /* Change the background color as needed */
+  color: #fff; /* Text color */
+  text-align: center;
+  align-items: center; /* Center align the text */
+  padding : -1px;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between; /* Place the logo on the right */
+  align-items: center; /* Vertically center the logo and text */
+  padding: 1px;
+}
+
+a {
+  text-decoration: none; /* Remove underline from the link */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ffffff; /* Set button background color */
+  color: #AB7D00; /* Set button text color */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add a slight border radius */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #000000; /* Change button background color on hover */
+}
+
+
+/* Style the logo */
+.logo img {
+  width: 110px; /* Adjust the width as needed */
+  height: 70px; /* Maintain aspect ratio */
+}
+
+/* Create the 30:70 vertical split */
+.split-container {
+  min-height: 96%; /* Use all available space to extend to the end of the page */
+  display: flex;
+}
+.search{  
+width: 400px;
+z-index: 11 !important;
+}
+
+/* Style the left panel (30%) */
+.left-panel {
+  flex: 0 0 30%;
+  background-color: #f0f0f0; /* Change the background color as needed */
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Make the left panel a flex container with a column layout */
+  flex-grow: 1; /* Allow left panel to grow and fill the remaining space */
+}
+
+/* Style the right panel (70%) */
+.right-panel {
+  flex: 0 0 65%;
+  background-color: #D3D3D3; /* Change the background color as needed */
+  padding: 20;
+  box-sizing: border-box;
+  z-index: 10 !important;
+}
+.map-container {
+width: 100%; /* Set the width to 100% to fill the available space */
+height: 100%; /* Set the height to 100% to fill the available space */
+}
+/* height of the container */
+.leaflet-container {
+  height: 90vh;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.cluster-icon {
+  background-color: #333;
+  height: 1em;
+  width: 1em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  box-shadow: 0 0 0px 5px #fff;
+}
+/*left Panel */
+
+.left-panel {
+width: 35%;
+background-color: #eee;
+display: flex;
+flex-direction: column;
+}
+
+
+.top-image {
+text-align: center;
+margin-bottom: 20px;
+}
+
+
+.top-image img {
+max-width: 100%; /* Adjust to the desired width */
+height: 100%; /* Maintain the image's aspect ratio */
+border: 1px solid #ccc;
+border-radius: 10px;
+}
+
+
+.search-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/* You can remove flex-grow if not needed */
+/* flex-grow: 1; */
+}
+
+
+.search-container select {
+width: 450px;
+padding: 30px;
+font-size: 20px;
+border: 1px solid #ccc;
+border-radius: 10px;
+}
