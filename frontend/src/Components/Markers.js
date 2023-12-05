@@ -55,6 +55,12 @@ export const servicesIcon = new Icon({
       category: 'building'
     },
     {
+      geocode: [41.587802008802214, -87.47503853035204],
+      info: <Anderson /> ,
+      popUp : 'Department Computer Information Technology',
+      category: 'building'
+    },
+    {
       geocode: [41.58702068752308, -87.47343875916728],
       popUp: "University Police",
       category: 'building'
@@ -70,6 +76,18 @@ export const servicesIcon = new Icon({
       popUp: "Classroom Office Building",
       category: 'building'
     },
+    {
+      geocode: [41.586962687960856, -87.47538624504193],
+      info : <Clo />,
+      popUp: "Department of Computer Science",
+      category: 'building'
+    },
+    {
+      geocode: [41.586962687960856, -87.47538624504193],
+      info : <Clo />,
+      popUp: "Department of Mathematics",
+      category: 'building'
+    },    
     {
       geocode: [41.58639283346341, -87.47530466562853],
       info : <Powers />,
@@ -104,6 +122,12 @@ export const servicesIcon = new Icon({
       geocode: [41.58353211960947, -87.47432377379278],
       info : <Nils />,
       popUp: "Nils Building",
+      category: 'building'
+    },
+    {
+      geocode: [41.58353211960947, -87.47432377379278],
+      info : <Nils />,
+      popUp: "College of Nursing",
       category: 'building'
     },
     {

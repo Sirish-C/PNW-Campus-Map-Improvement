@@ -112,6 +112,24 @@ const items = [
     name: 'dining',
     value:'dining'
   },
+  {
+    id: 11,
+    value: "Department Computer Information Technology",
+    name:"Department Computer Information Technology",
+  },{
+    id: 12,
+    value: "Department of Computer Science",
+    name:"Department of Computer Science",
+  },
+  {
+    id: 13,
+    value: "Department of Mathematics",
+    name:"Department of Mathematics",
+  },{
+    id:14,
+    value:"College of Nursing",
+    name:"College of Nursing"
+  }
 ]
 
 const handleOnSearch = (string, results) => {
@@ -128,6 +146,7 @@ const handleOnHover = (result) => {
 const handleOnSelect = (item) => {
   // the item selected
   console.log(item.value)
+  setSelectedOption("building");
   const selected_building = buildingMarkers.find((building)=> building.popUp===item.value);
   setSearchSelection(selected_building);
   console.log(selected_building);
