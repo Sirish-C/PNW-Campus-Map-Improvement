@@ -4,6 +4,9 @@
 
 This repository contains a sequence diagram illustrating the interactions within a campus map system. The diagram showcases how different components collaborate to provide users with a seamless experience in terms of location selection, search, and information retrieval on a campus map.
 
+![SequenceDiagram](https://github.com/Sirish-C/PNW-Campus-Map-Improvement/assets/118717710/ea5f6dda-d1d3-42fc-8676-b23a55793205)
+
+
 ## Components
 
 1. **User**: Represents an individual interacting with the campus map system.
