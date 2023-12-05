@@ -8,7 +8,6 @@ This project includes a search bar component with a state diagram to help users 
 
 ### States and Transitions
 
-```markdown
 1. **Start State:**
    - The search bar is idle, waiting for user input.
 
@@ -32,3 +31,19 @@ This project includes a search bar component with a state diagram to help users 
 
 8. **End State:**
    - The search process is complete.
+
+## How to Use
+
+**To use the search bar:**
+
+**Enter keywords in the search bar:**
+
+- Interact with the search bar by typing relevant keywords.
+Observe the search results:
+
+- The system will display a list of matching items based on your input.
+Click on a result for more details:
+
+- Select a specific result from the displayed list to access additional details.
+
+This modification clarifies the usage instructions within the "How to Use" section of the README.
