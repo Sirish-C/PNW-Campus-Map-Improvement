@@ -91,10 +91,7 @@ const center = [41.58389937037336, -87.47355647640109];
       />
  
 
-<MarkerClusterGroup
-  chunkedLoading
- // iconCreateFunction={createClusterCustomIcon}
->
+
   {filteredMarkers.map((marker) => (
     <Marker
     key={marker.id} // Ensure each marker has a unique key
@@ -110,7 +107,6 @@ const center = [41.58389937037336, -87.47355647640109];
     
   </Marker>
   ))}
-</MarkerClusterGroup>
     </MapContainer>
   );
               }
