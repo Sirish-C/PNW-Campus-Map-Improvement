@@ -47,4 +47,4 @@ Click on a result for more details:
 
 - Select a specific result from the displayed list to access additional details.
 
-This modification clarifies the usage instructions within the "How to Use" section of the README.
+This explains the state transitions and interactions within a system managing search bar operations using a state diagram.
