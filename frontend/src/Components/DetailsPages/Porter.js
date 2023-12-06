@@ -3,6 +3,9 @@ import React from 'react';
 const Porter  = () => (
   <div>
     <h2> Porter Hall (PORT)</h2>
+    <p>Gene Stratton Porter Hall (PORT) is located on the north side of the Hammond campus, west of
+the 169th St. Parking Garage, south of the 169th Street Parking lot, northeast of the Student
+Union & Library Building, east of the Gyte Building, and north of 171st Street. </p>
 
 <h2>First Floor</h2>
 <ul>

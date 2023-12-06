@@ -2,7 +2,12 @@ import React from 'react';
 
 const Powers  = () => (
   <div>
-    <h2>Powers Building</h2>
+    <h2>Powers Building (PWRS)</h2>
+    <p>The Donald S. Powers Computer Education Building (PWRS) is located in the northwest corner
+of the Hammond campus, east of Woodmar Ave. and west of 169th Street Parking, south of the
+Classroom Office Building, just north of the Gyte Annex Building and just west of the Potter
+Building. PWRS is located on the Peregrine Path, connecting to both the Gyte Annex Building
+and the Potter Building. </p>
 
 <h2>First Floor</h2>
 <ul>

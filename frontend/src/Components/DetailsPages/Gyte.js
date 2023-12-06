@@ -3,6 +3,10 @@ import React from 'react';
 const Gyte  = () => (
   <div>
 <h2>GYTE Building</h2>
+<p>The Millard E. Gyte Building (GYTE) is located in the northwest corner of the Hammond campus,
+east of Woodmar Ave. and southwest of 169th Street parking, just south of the Gyte Annex
+Building, northwest of the Founders Plaza, and west of Porter Hall. GYTE is located on the
+Peregrine Path. </p>
 <h2>Ground Floor</h2>
 <ul>
 <li>Computer Lab - room 40-48</li>

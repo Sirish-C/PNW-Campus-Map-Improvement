@@ -3,6 +3,10 @@ import React from 'react';
 const Anderson  = () => (
   <div>
     <h2>Anderson Building (ANDR)</h2>
+    <p>The Edward D. Anderson Building (ANDR) is located in the northwest corner of the Hammond
+campus, east of Woodmar Ave. and just south of 169th St. ANDR is at the northern end of the
+Peregrine Path, just north of the Classroom Office Building, and northwest of 169th Street
+Parking. There is a circle drive that extends off of Woodmar Ave. to the southwest entrance.</p>
 
 <h2>First Floor</h2>
 <ul>

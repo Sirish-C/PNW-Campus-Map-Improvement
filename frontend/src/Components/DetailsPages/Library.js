@@ -3,6 +3,9 @@ import React from 'react';
 const SULB  = () => (
   <div>
     <h2>Student Union Library Building(SULB)</h2>
+    <p>The Student Union and Library Building (SULB) is located in the north central part of the
+Hammond campus, west of Ontario Ave., southeast of the Gyte Building, southwest of Porter
+Hall, north of North 173rd Street Parking and just east of the Peregrine Path. </p>
 <h2>First Floor</h2>
 <ul>
 <li>Bookstore & Campus Shop - room 110</li>

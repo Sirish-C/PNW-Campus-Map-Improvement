@@ -3,6 +3,11 @@ import React from 'react';
 const Potter  = () => (
   <div>
     <h2>Potter Building</h2>
+    <p>The Andrey A. Potter Building (POTT) is located in the northwest corner of the Hammond
+campus, east of Woodmar Ave. and west of 169th Street Parking, southeast of the Classroom
+Office Building, just north of the Gyte Annex Building and just east the Powers Building. POTT is
+located on the Peregrine Path. 
+</p>
 
 <h2>First Floor</h2>
 <ul>

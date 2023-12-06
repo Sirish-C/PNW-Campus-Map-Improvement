@@ -3,6 +3,10 @@ import React from 'react';
 const ClassroomOffice  = () => (
   <div>
     <h2>Classroom Office Building (CLO)</h2>
+    <p>The Classroom Office Building (CLO) is located in the northwest corner of the Hammond
+campus, east of Woodmar Ave. and west of 169th Street Parking, just south of the Anderson
+Building and just north of the Powers Building and the Potter Building. CLO is located on the
+Peregrine Path. </p>
 
 <h2>First Floor</h2>
 <ul>
