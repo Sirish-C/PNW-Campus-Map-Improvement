@@ -18,7 +18,7 @@ export const Layout = () => {
     building: "https://www.pnw.edu/wp-content/uploads/2023/09/PNW-Bell-Tower-077_576x384.jpg",
     parking: "https://www.pnw.edu/wp-content/uploads/2023/01/PNW-Signage-and-Art-033-1-scaled.jpg",
     emergency: "https://www.pnw.edu/public-safety/wp-content/uploads/sites/84/2020/01/hammond-campus-police_900_feature-900x600.jpg",
-    dining : "https://bloximages.chicago2.vip.townnews.com/nwitimes.com/content/tncms/assets/v3/editorial/5/2d/52d22b54-96d6-514a-98eb-c47340a7e60f/63ed822fb2d9f.image.jpg?resize=1200%2C800" ,
+    dining : "https://pnw.campus-dining.com/wp-content/uploads/2022/07/2022_Campus_Cafe_Leos-Marketplace_final-lo.png" ,
     Entry : "https://www.pnw.edu/wp-content/uploads/2020/02/WhyPNW_Housing_800x533.jpg",
     services : "https://media.licdn.com/dms/image/D5622AQGzSxTMAUw5og/feedshare-shrink_800/0/1670782442632?e=2147483647&v=beta&t=-wlGCteOZSrUb8Ao6IkuNOGbmZ0Ue35oqhSpUVR5EAE"
   };
@@ -112,6 +112,24 @@ const items = [
     name: 'dining',
     value:'dining'
   },
+  {
+    id: 11,
+    value: "Department Computer Information Technology",
+    name:"Department Computer Information Technology",
+  },{
+    id: 12,
+    value: "Department of Computer Science",
+    name:"Department of Computer Science",
+  },
+  {
+    id: 13,
+    value: "Department of Mathematics",
+    name:"Department of Mathematics",
+  },{
+    id:14,
+    value:"College of Nursing",
+    name:"College of Nursing"
+  }
 ]
 
 const handleOnSearch = (string, results) => {
@@ -128,6 +146,7 @@ const handleOnHover = (result) => {
 const handleOnSelect = (item) => {
   // the item selected
   console.log(item.value)
+  setSelectedOption("building");
   const selected_building = buildingMarkers.find((building)=> building.popUp===item.value);
   setSearchSelection(selected_building);
   console.log(selected_building);

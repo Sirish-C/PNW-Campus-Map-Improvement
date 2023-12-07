@@ -6,14 +6,14 @@ const CLOServices  = () => (
 
 <h2>First Floor</h2>
 <ul>
-<li>Student Life - room 120A </li>
-<li>Leo's Marketplace - room 117</li>
-<li>Student Lounge - room 101</li>
-<li>Multicultural Lounge - room 180</li>
+<li>Student Life - Room 120A </li>
+<li>Leo's Marketplace - Room 117</li>
+<li>Student Lounge - Room 101</li>
+<li>Multicultural Lounge - Room 180</li>
 </ul>
 <h2>Second Floor</h2>
 <ul>
-<li>The Writing Center - room 265</li>
+<li>The Writing Center - Room 265</li>
 </ul>
 
   </div>

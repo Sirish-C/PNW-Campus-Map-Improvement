@@ -4,7 +4,7 @@ import L from 'leaflet';
 import "leaflet/dist/leaflet.css";
 import { useHistory } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup,Polygon, Tooltip, LayersControl } from "react-leaflet";
-import MarkerClusterGroup from "react-leaflet-cluster";
+
 import { polygonCoords, polygoncoords1,polygoncoords2 } from './Highlight';
 import { buildingIcon,diningIcon,parkingIcon,emergencyIcon,entryIcon,servicesIcon } from './Markers.js';
 import FloatingIcons, {iconsData} from './FloatingIcons.js';

@@ -6,22 +6,22 @@ const LAWSHEServices = () => (
    
 <h2>First Floor</h2>
 <ul>
-<li> Financial Aid - room 122</li>
-<li>Admissions & Enrollment Service Center -  room 130 </li>
+<li> Financial Aid - Room 122</li>
+<li>Admissions & Enrollment Service Center -  Room 130 </li>
 </ul>
 <h2>Second Floor</h2>
 <ul>
-<li>Graduate Studies - room 212</li>
-<li>International Admissions & Immigration Services - room 227</li>
-<li>Office of Research & Sponsored Programs - room 246</li>
+<li>Graduate Studies - Room 212</li>
+<li>International Admissions & Immigration Services - Room 227</li>
+<li>Office of Research & Sponsored Programs - Room 246</li>
  
 </ul>
 <h2>Third Floor</h2>
 <ul>
-<li> Institutional Advancement - room 318</li>
-<li>Finance & Administration - room 336</li>
-  <li>Academic Affairs - room 346</li>
-  <li>Enrollment Management & Student Affairs - room 352</li>
+<li> Institutional Advancement - Room 318</li>
+<li>Finance & Administration - Room 336</li>
+  <li>Academic Affairs - Room 346</li>
+  <li>Enrollment Management & Student Affairs - Room 352</li>
   
 </ul>
 
